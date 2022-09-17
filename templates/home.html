@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Detector de Fake News</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem;
+      "
+    >
+      <h1 style="font-size: 32px; color: red">Detector de Fake News</h1>
+    </div>
+    <div
+    style="
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem;
+    "
+  >
+    <p>Diariamente somos bombardeados com centas de notícias sobre os mais variados assuntos.</p>
+    <p>Mas como saber se uma notícia é realmente verdade ou não?</p>
+    <p>Para ajudar nessa tarefa, treinamos uma rede neural com diversas notícicas sobre os mais variados assuntos, e ela aprendeu a nos ajudar.</p>
+  </div>
+
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <h3>
+        Para saber se uma notícia é falsa ou verdadeira, insira o texto no campo
+        abaixo:
+      </h3>
+      <form action="{{url_for('predict')}}" method="POST">
+        <h4 style="text-align: center">
+          <strong style="color: red">{{pred}}</strong>
+        </h4>
+        <textarea
+          name="x1"
+          placeholder="Insira aqui a notícia"
+          required="required"
+          rows="10"
+          cols="100"
+        ></textarea>
+        <h1 style="text-align: center">
+          <button type="submit" class="btn btn-primary btn-block btn-large">
+            Verificar
+          </button>
+        </h1>
+      </form>
+    </div>
+  </body>
+</html>
+
+<!-- <h2 style="text-align: center">
+  <strong>mentorama</strong> <span style="color: #0000ff">-</span> Data Science
+  PRO
+</h2>
+<p style="text-align: center">Minha primeira API!</p>
+<p style="text-align: center">&nbsp;</p>
+<p style="text-align: center">&nbsp;</p>
+<h1 style="text-align: center">
+  mentorama<span style="color: #0000ff">.</span>
+</h1>
+
+<div class="login">
+  <form action="{{url_for('predict')}}" method="POST">
+    <h1 style="text-align: center">
+      Insira aqui o seu texto:
+    </h1>
+    <input type="text" name="x1" placeholder="X1" required="required" />
+    <h1 style="text-align: center">
+      <button type="submit" class="btn btn-primary btn-block btn-large">
+        Predict
+      </button>
+    </h1>
+  </form>
+
+  <p style="text-align: center">&nbsp;</p>
+
+  .
+  <h2 style="text-align: center">
+    <strong>{{pred}}</strong> <span style="color: #0000ff">.</span>
+  </h2>
+</div> -->

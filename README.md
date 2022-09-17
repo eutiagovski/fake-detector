@@ -1,2 +1,2 @@
-# fake-detector
-Detector de Fakenews
+# Detector de Fake News
+
