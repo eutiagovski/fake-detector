@@ -128,7 +128,9 @@ function App() {
                   <Typography
                     variant="h4"
                     my={4}
-                    style={{ color: prediction.result === "Falsa" ? "red" : "green" }}
+                    style={{
+                      color: prediction.result === "Falsa" ? "red" : "green",
+                    }}
                   >
                     Essa notícia parece ser {prediction.result}
                   </Typography>
@@ -169,6 +171,7 @@ function App() {
                     <Link
                       href="https://github.com/eutiagovski/fake-detector"
                       target="blank"
+                      align='right'
                     >
                       Ver o github do projeto
                     </Link>
@@ -180,26 +183,27 @@ function App() {
         </Box>
       </div>
 
-      {/* <div id="como-funciona">
+      <div id="como-funciona">
         <Box
           sx={{
             height: "100vh",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            justifyContent: "center",
             backgroundColor: "white",
+            p: 4,
           }}
         >
-          <Typography variant="h5" mb={4}>
+          <Typography variant="h5" my={4}>
             COMO FUNCIONA?
           </Typography>
-          <Typography variant="article" m={4} align="center">
+          <Typography variant="article" m={4} mb={1} align="center">
             Nosso modelo utiliza um algoritimo de aprendizado profundo, treinado
-            mais de 19 mil notícias brasileiras divididas em diversas categorias.
+            com mais de 19 mil notícias brasileiras divididas em diversas
+            categorias.
           </Typography>
           <Typography variant="article" m={4} align="center">
-            O modelo final obteve uma acurácia de 96%, 
+            O modelo final obteve uma acurácia de 96%.
           </Typography>
         </Box>
       </div>
@@ -207,7 +211,7 @@ function App() {
       <div id="footer">
         <Box
           sx={{
-            height: "30vh",
+            height: "20vh",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -215,11 +219,18 @@ function App() {
             backgroundColor: "red",
           }}
         >
-          <Typography variant="h5" mb={4}>
-            COMO FUNCIONA?
+          <Typography variant="h7" mb={4} align='center'>
+            MIT @{" "}
+            <Link href="https://github.com/eutiagovski" sx={{color:'black'}}>
+              Tiago de Oliveira Machado
+            </Link>{" "}
+            |{" "}
+            <Link href="mailto:tiagomachadodev@gmail.com" sx={{color:'black'}}>
+              tiagomachadodev@gmail.com
+            </Link>
           </Typography>
         </Box>
-      </div> */}
+      </div>
 
       {/* MOTIVAÇÃO  */}
       {/* <Box sx={{ height: "100vh", m: 4 }}>
