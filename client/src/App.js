@@ -27,7 +27,7 @@ function App() {
     const formData = new FormData();
     formData.append("text", values.news);
 
-    fetch("http://localhost:5000/predict", {
+    fetch("https://classificador-fakenews.herokuapp.com/predict", {
       method: "POST",
       body: formData,
     })
