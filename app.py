@@ -29,7 +29,7 @@ def predict():
     else:
         result = 'Falsa'
 
-    return {"result": result}
+    return {"result": result, 'probFalse': str(round(predicted_scores[0][1].round(2)*100, 2)), 'probTrue': str(round(predicted_scores[0][0].round(2)*100, 2))}
 
 @app.route('/model_health/<model_id>', methods=['GET'])
 def model_health(model_id):
