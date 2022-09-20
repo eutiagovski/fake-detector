@@ -128,7 +128,7 @@ function App() {
                   <Typography
                     variant="h4"
                     my={4}
-                    style={{ color: prediction === "Falsa" ? "red" : "green" }}
+                    style={{ color: prediction.result === "Falsa" ? "red" : "green" }}
                   >
                     Essa notícia parece ser {prediction.result}
                   </Typography>
@@ -195,9 +195,11 @@ function App() {
             COMO FUNCIONA?
           </Typography>
           <Typography variant="article" m={4} align="center">
-            Nosso modelo utiliza um algorítimo de aprendizado profundo, treinado
-            mais de 19 mil notícias brasileiras, igualmente divididas entre
-            treino e teste.
+            Nosso modelo utiliza um algoritimo de aprendizado profundo, treinado
+            mais de 19 mil notícias brasileiras divididas em diversas categorias.
+          </Typography>
+          <Typography variant="article" m={4} align="center">
+            O modelo final obteve uma acurácia de 96%, 
           </Typography>
         </Box>
       </div>
