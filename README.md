@@ -1,17 +1,13 @@
 # Classificador de Fake News
 
-O que? 
+https://classificador-fakenews.herokuapp.com/
+
 
 Este projeto é um classificador que utiliza inteligência artificial para nos ajudar a reconhecer fakenews.
 
 
-Por que? 
-
 
 ## Como utilizar
-### Na íntegra
-Você pode utilizar a aplicação diretamente no link: <a href='https://classificador-fakenews.herokuapp.com/' target="_blank">Classificador Fakenews</a>
-
 ## Api
 
 #### Modelo Principal - Regressão Linear (Acurácia: 85%)
