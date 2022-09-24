@@ -6,9 +6,7 @@ https://classificador-fakenews.herokuapp.com/
 Este projeto é um classificador que utiliza inteligência artificial para nos ajudar a reconhecer fakenews.
 
 
-
-## Como utilizar
-## Api
+## Como utilizar a Api
 
 #### Modelo Principal - Regressão Linear (Acurácia: 85%)
 - POST
@@ -29,11 +27,6 @@ Este projeto é um classificador que utiliza inteligência artificial para nos a
     - /model_health/linear: retorna 
     - /model_health/neural: versão final do model para previsão
 
-
-### Baixar o repositório
-- Faça um clone deste repositório em sua máquina local
-- Instale as dependências
-- Inicie o servidor Flask
 
 ## Relatório Executivo
 ### Introdução 
@@ -61,14 +54,14 @@ O desenvolvimento do projeto pode ser acompanhado pelo notebook da pesquisa em a
 
 ### Conclusões
 
-Nosso modelo até o presente momento atingiu uma acurácia de 96%.
-Classificar textos é uma tarefa computacionalmente dificil. Além das diferentes particularidades de cada região, ainda há pouco material na língua portuguesa, o que dificulta qualquer pesquisa na área.
+Nosso modelo até o presente momento atingiu uma acurácia de 80% na validação final.
+Classificar textos é uma tarefa computacionalmente dificil. Além das diferentes particularidades de cada região, ainda há pouco material na língua portuguesa, o que representa um desafio para qualquer desenvolvimento na área.
 
 ## Responsabilidade
 
 Este é um trabalho experimental, portanto não assumimos nenhuma responsabilidade pela informação gerada.
 
-Apesar de obtermos uma alta acurácia no teste e validação do modelo, no mundo real, a classificação de texto é uma das tarfas mais difíceis para uma máquina. Por isso, utilize nossa api como uma referência, uma ajuda para classificar uma notícia.
+Apesar de obtermos uma boa acurácia no teste e validação do modelo, no mundo real, a classificação de texto é uma das tarfas mais difíceis para uma máquina. Por isso, utilize nossa api como uma referência, uma ajuda para classificar uma notícia.
 
 ## Tecnologias Utilizadas
 
