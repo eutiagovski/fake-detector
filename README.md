@@ -10,7 +10,7 @@ Por que?
 
 ## Como utilizar
 ### Na íntegra
-Você pode utilizar a aplicação diretamente no link: <a href='https://classificador-fakenews.herokuapp.com/' target='_blank'>Classificador Fakenews</a>
+Você pode utilizar a aplicação diretamente no link: <a href='https://classificador-fakenews.herokuapp.com/' target="_blank">Classificador Fakenews</a>
 
 ## Api
 
