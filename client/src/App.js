@@ -141,7 +141,7 @@ function App() {
                     Probabilidade de ser Falsa: {prediction.probFalse}%
                   </Typography>
                   {prediction.result === "Verdadeira" ? (
-                    <Typography mb={4}></Typography>
+                    <Typography mb={4}>Legal! Esta notícia parece confiável.</Typography>
                   ) : (
                     <Typography mb={4}>
                       Desconfie da fonte e dos autores desta notícia. Eles
@@ -203,7 +203,7 @@ function App() {
             categorias.
           </Typography>
           <Typography variant="article" m={4} align="center">
-            O modelo final obteve uma acurácia de 96%.
+            O modelo final obteve uma acurácia de 94%.
           </Typography>
         </Box>
       </div>
