@@ -96,6 +96,9 @@ function App() {
                     **Textos pequenos ou incompletos tendem a resultar um falso
                     negativo.
                   </Typography>
+                  <Typography variant="span" mb={2}>
+                    Contador de palavras {values.news.split().length}
+                  </Typography>
                 </Box>
                 <TextField
                   size="small"
@@ -116,7 +119,6 @@ function App() {
                     variant="contained"
                     required
                     onClick={handleSubmit}
-                    disabled={values.news.split(" ").length < 100}
                   >
                     Verificar
                   </Button>
