@@ -17,7 +17,7 @@ model_alt = load('models/fake-detector_alt_v0.joblib')
 app = Flask(__name__, static_folder="client/build/static", template_folder="client/build")
 CORS(app) # new
 
-app.run(debug=True)
+# app.run(debug=True)
 
 # create home route
 @app.route('/')

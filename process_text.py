@@ -1,10 +1,14 @@
 import spacy
 import re
-
+    
 
 class SpacyTextPreProcess:
     def __init__(self):
-        self.nlp = spacy.load("pt_core_news_sm")
+        try:
+            self.nlp = spacy.load("pt_core_news_sm")
+        except: # If not present, we download
+            spacy.cli.download("pt_core_news_sm")
+            self.nlp = spacy.load("pt_core_news_sm")
   
     def transform(self, text):
         # remocao de caracteres especiais e transformando o texto em minusculo
