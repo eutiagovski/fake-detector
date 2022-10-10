@@ -28,14 +28,16 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     #request text input
-    inputs = [text_process(i) for i in request.form.values()]
+    inputs = [text_process.transform(i) for i in request.form.values()]
     
     predicted_scores = model.predict(inputs)
 
     # handle result
     result = 'falsa' if [i.round(2) for i in predicted_scores[0]][1] >= 0.7 else 'verdadeira'
-
-    return {"result": result, 'probFalse': str(round(predicted_scores[0][1].round(2)*100, 2)), 'probTrue': str(round(predicted_scores[0][0].round(2)*100, 2))}
+    confiance = max(predicted_scores[0])
+    print(confiance.round(2))
+    
+    return {"result": result, "confiance": str(confiance.round(2))}
 
 # create predict route
 @app.route('/predict-alt', methods=['POST'])

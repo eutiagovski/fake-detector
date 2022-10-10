@@ -1,6 +1,5 @@
 import spacy
 import re
-    
 
 class SpacyTextPreProcess:
     def __init__(self):

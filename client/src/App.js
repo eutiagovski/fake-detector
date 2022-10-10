@@ -27,19 +27,18 @@ function App() {
     const formData = new FormData();
     formData.append("text", values.news);
 
-    fetch("https://classificador-fakenews.herokuapp.com/predict", {
+    fetch("/predict", {
       method: "POST",
       body: formData,
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setPrediction(data);
       });
   };
 
   return (
-    <Grid container direction="column">
+    <Grid container direction="column" maxWidth='xl'>
       <Box
         sx={{
           height: "100vh",
@@ -54,8 +53,7 @@ function App() {
           Fato ou Fake?
         </Typography>
         <Typography variant="article" align="center">
-          Este projeto é um classificador que utiliza rede neural para
-          reconhecer a probabilidade de uma notícia ser verdadeira ou falsa.
+          Este projeto é um classificador treinado para nos ajudar a reconhecer a veracidade de uma notícia.
         </Typography>
 
         <Box my={4}>
@@ -97,7 +95,7 @@ function App() {
                     negativo.
                   </Typography>
                   <Typography variant="span" mb={2}>
-                    Contador de palavras {values.news.split().length}
+                    Contador de palavras: {values.news.split(' ').length - 1}
                   </Typography>
                 </Box>
                 <TextField
@@ -131,25 +129,24 @@ function App() {
                     variant="h4"
                     my={4}
                     style={{
-                      color: prediction.result === "Falsa" ? "red" : "green",
+                      color: prediction.result === "falsa" ? "red" : "green",
                     }}
                   >
                     Essa notícia parece ser {prediction.result}
                   </Typography>
-                  <Typography>
-                    Probabilidade de ser Verdadeira: {prediction.probTrue}%
-                  </Typography>
-                  <Typography mb={4}>
-                    Probabilidade de ser Falsa: {prediction.probFalse}%
-                  </Typography>
-                  {prediction.result === "Verdadeira" ? (
-                    <Typography mb={4}>Legal! Esta notícia parece confiável.</Typography>
+                 
+                  
+                  {prediction.result === "verdadeira" ? (
+                    <Typography mb={2}>Legal! Esta notícia parece confiável.</Typography>
                   ) : (
-                    <Typography mb={4}>
+                    <Typography mb={2}>
                       Desconfie da fonte e dos autores desta notícia. Eles
                       parecem estar transmitindo uma informação falsa.
                     </Typography>
                   )}
+                  <Typography mb={4}>
+                    Confiança do algoritmo: {prediction.confiance}%
+                  </Typography>
                   <Button
                     align="center"
                     fullWidth
