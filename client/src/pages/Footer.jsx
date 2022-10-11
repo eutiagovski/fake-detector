@@ -3,7 +3,7 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import { Container } from "@mui/material";
+import { Container, Link } from "@mui/material";
 
 export default function Footer() {
   return (
@@ -26,7 +26,7 @@ export default function Footer() {
                   sx={{ flexGrow: 1 }}
                   fontWeight="500"
                 >
-                  Copyright (c) Tiago de Oliveira Machado
+                  <Link href='https://github.com/eutiagovski/fake-detector/blob/main/LICENSE' target='_blank' sx={{color: 'white'}}>Copyright (c) Tiago de Oliveira Machado</Link>
                 </Typography>
               </Box>
               <Box sx={{ display: "flex", alignItems: "center", justifyContent:'flex-end' }}>
@@ -36,7 +36,7 @@ export default function Footer() {
                   sx={{ flexGrow: 1 }}
                   fontWeight="500"
                 >
-                  MIT 2022
+                  <Link href='https://github.com/eutiagovski/fake-detector/blob/main/LICENSE' target='_blank' sx={{color: 'white'}}>MIT 2022</Link>
                 </Typography>
               </Box>
             </Box>
