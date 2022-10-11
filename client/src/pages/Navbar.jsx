@@ -3,7 +3,7 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import { Container } from "@mui/material";
+import { Container, Link } from "@mui/material";
 
 export default function Navbar() {
   return (
@@ -13,14 +13,14 @@ export default function Navbar() {
           <Container maxWidth="lg">
             <Box sx={{display: 'flex', alignItems: 'center'}}>
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                Classificador
+                Classificador FakeNews
               </Typography>
               <Box sx={{ display: "flex", gap: 2 }}>
                 {/* <Typography variant="h8" component="div" sx={{ flexGrow: 1 }}>
                   Classificador
                 </Typography> */}
                 <Typography variant="h8" component="div" sx={{ flexGrow: 1 }}>
-                  Sobre o Projeto
+                  <Link href='https://github.com/eutiagovski/fake-detector'>Sobre</Link>
                 </Typography>
               </Box>
             </Box>
