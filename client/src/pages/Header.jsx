@@ -8,6 +8,7 @@ import {
   Button,
   Link,
   CircularProgress,
+  Toolbar,
 } from "@mui/material";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -47,6 +48,7 @@ const Header = () => {
   }, [text]);
   return (
     <>
+      <Toolbar />
       <Box mb={4} sx={{ mb: 2 }}>
         <Typography variant="h4" pt={4} mb={2} align="center" mx={10}>
           Classificador Fake News
@@ -70,9 +72,9 @@ const Header = () => {
                 Este projeto é uma prova de conceito sobre o uso da Inteligência
                 Artificial para classificação de notícias brasileiras.
                 Utilizando técnicas de aprendizado de máquina, treinamos um
-                modelo com mais de 5 mil notícias verdadeiras e
-                falsas, e obtemos desse treinamento características que
-                possibilitam a classificação de um novo texto.
+                modelo com mais de 5 mil notícias verdadeiras e falsas, e
+                obtemos desse treinamento características que possibilitam a
+                classificação de um novo texto.
               </Typography>
             </Box>
 
@@ -85,8 +87,8 @@ const Header = () => {
                 características semânticas e de escrita, como palavras
                 utilizadas, classes gramaticais mais frequentes e intenção geral
                 do texto. Depois, essas características serão passadas para o
-                modelo já treinado, e ele irá retornar a probabilidade
-                do texto ser uma fake news.
+                modelo já treinado, e ele irá retornar a probabilidade do texto
+                ser uma fake news.
               </Typography>
             </Box>
 

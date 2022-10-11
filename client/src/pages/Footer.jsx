@@ -11,13 +11,32 @@ export default function Footer() {
       <AppBar position="static">
         <Toolbar>
           <Container maxWidth="lg">
-            <Box sx={{display: 'flex', alignItems: 'center'}}>
-              <Typography variant="h8" component="div" sx={{ flexGrow: 1 }} fontWeight='500'>
-                Criado por Tiago Machado
-              </Typography>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                py:2,
+              }}
+            >
               <Box sx={{ display: "flex", gap: 2 }}>
-                <Typography variant="h8" component="div" sx={{ flexGrow: 1 }} fontWeight='500'>
-                  2022
+                <Typography
+                  variant="h8"
+                  component="div"
+                  sx={{ flexGrow: 1 }}
+                  fontWeight="500"
+                >
+                  Copyright (c) Tiago de Oliveira Machado
+                </Typography>
+              </Box>
+              <Box sx={{ display: "flex", alignItems: "center", justifyContent:'flex-end' }}>
+                <Typography
+                  variant="h8"
+                  component="div"
+                  sx={{ flexGrow: 1 }}
+                  fontWeight="500"
+                >
+                  MIT 2022
                 </Typography>
               </Box>
             </Box>
