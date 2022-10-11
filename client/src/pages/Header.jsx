@@ -43,8 +43,8 @@ const Header = () => {
   };
 
   useEffect(() => {
-    text.length <= 1 && setResult(false)
-  }, [text])
+    text.length <= 1 && setResult(false);
+  }, [text]);
   return (
     <>
       <Box mb={4} sx={{ mb: 2 }}>
@@ -67,12 +67,12 @@ const Header = () => {
             </Typography>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
               <Typography variant="body2" align="justify">
-                Este projeto é uma prova de conceito do uso da Inteligência
-                Artificial para classificação de notícias brasileiras em
-                português. Utilizando tecnicas de aprendizado de máquina,
-                treinamos um modelo com mais de 5 mil notícias brasileiras
-                verdadeiras e falsas e obtemos desse treinamento características
-                que possibilitam a classificação de um novo texto.
+                Este projeto é uma prova de conceito sobre o uso da Inteligência
+                Artificial para classificação de notícias brasileiras.
+                Utilizando técnicas de aprendizado de máquina, treinamos um
+                modelo com mais de 5 mil notícias verdadeiras e
+                falsas, e obtemos desse treinamento características que
+                possibilitam a classificação de um novo texto.
               </Typography>
             </Box>
 
@@ -81,12 +81,12 @@ const Header = () => {
                 Como funciona?
               </Typography>
               <Typography variant="body2" align="justify">
-                Nosso sistema irá processar o texto, extraindo características
-                semânticas e de escrita como palavras utilizadas, classes
-                gramaticais mais frequentes e intenção geral do texto, e então
-                essas características são passadas para um modelo de aprendizado
-                de máquina treinado para reconhecer a probabilidade do texto ser
-                uma fake news.
+                Nosso sistema irá processar o texto da notícia, extraindo
+                características semânticas e de escrita, como palavras
+                utilizadas, classes gramaticais mais frequentes e intenção geral
+                do texto. Depois, essas características serão passadas para o
+                modelo já treinado, e ele irá retornar a probabilidade
+                do texto ser uma fake news.
               </Typography>
             </Box>
 
