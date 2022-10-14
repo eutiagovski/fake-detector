@@ -7,9 +7,13 @@ Este projeto é uma prova de conceito sobre o uso da Inteligência Artificial pa
 
 A detecção de notícias falsas é um problema crítico, porém desafiador, no Processamento de Linguagem Natural (NLP). A rápida ascensão das redes sociais plataformas não apenas gerou um grande aumento na acessibilidade da informação, mas também acelerou a disseminação de notícias falsas. Desta forma, o efeito das notícias falsas vem crescendo, às vezes se estendendo ao mundo offline e ameaçando a segurança pública. Dado o massivo quantidade de conteúdo da Web, a detecção automática de notícias falsas é um problema prático de PNL útil para todos os provedores de conteúdo online, a fim de reduzir o tempo e o esforço humano para detectar e impedir a disseminação de notícias falsas. 
 
-Logo, o objetivo deste trabalho é realizar uma prova de conceito sobre o uso da Inteligência Artificial como um aliado para classificação de notícias falsas. Realizaremos a experimentação e construção de um modelo funcional de classificação de notícias através do uso de técnicas de aprendizagem de máquina, e a disponibilização de um portal dinâmico e acessível a todos, como ferramenta útil para a sociedade. Nesse contexto, exploraremos o uso de redes neurais na busca daquele que possuir a melhor acurácia, sendo possível representar de forma satisfatória resultados em dados reais e atualizados.
+Logo, este trabalho tem como objetivo realizar uma prova de conceito sobre o uso da Inteligência Artificial como um aliado para classificação de notícias falsas. Realizaremos a experimentação e construção de um modelo funcional de classificação de notícias através do uso de técnicas de aprendizagem de máquina, e a disponibilização de um portal dinâmico e acessível a todos, como ferramenta útil para a sociedade. Nesse contexto, exploraremos o uso de redes neurais na busca daquele que possuir a melhor acurácia, sendo possível representar de forma satisfatória resultados em dados reais e atualizados.
 
-O desenvolvimento do projeto pode ser acompanhado pelo notebook da pesquisa em anexo a este repositório.
+Saiba mais:
+
+<a href='https://github.com/eutiagovski/fake-detector/tree/main/notebooks/'>Veja aqui o desenvolvimento do projeto na íntegra.</a>
+
+<a href='https://github.com/eutiagovski/fake-detector/tree/main/docs/'>Leia aqui o artigo completo sobre este projeto.</a>
 
 ## Como utilizar a Api
 

@@ -171,7 +171,7 @@ const Header = () => {
               </Typography>
               <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
                 <Link
-                  href="https://github.com/eutiagovski/fake-detector/relatorio-executivo/"
+                  href="https://github.com/eutiagovski/fake-detector/relatorio-executivo/tree/main/docs"
                   target="_blank"
                 >
                   - Veja aqui o relatório executivo.{" "}
