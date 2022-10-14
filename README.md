@@ -11,6 +11,8 @@ Logo, este trabalho tem como objetivo realizar uma prova de conceito sobre o uso
 
 Saiba mais:
 
+<a href='https://classificador-fakenews.herokuapp.com/'>Acesse o classificador e verifique uma notícia</a>
+
 <a href='https://github.com/eutiagovski/fake-detector/tree/main/notebooks/'>Veja aqui o desenvolvimento do projeto na íntegra.</a>
 
 <a href='https://github.com/eutiagovski/fake-detector/tree/main/docs/'>Leia aqui o artigo completo sobre este projeto.</a>
