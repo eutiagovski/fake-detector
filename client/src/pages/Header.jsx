@@ -151,9 +151,9 @@ const Header = () => {
                   >
                     Esta notícia parece ser {result.result}!
                   </Typography>
-                  <Typography>
+                  {/* <Typography>
                     Confiança: {parseFloat(result.confiance) * 100}%
-                  </Typography>
+                  </Typography> */}
                 </Box>
               </div>
             )}
